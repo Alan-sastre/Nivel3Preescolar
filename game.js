@@ -25,7 +25,6 @@ const config = {
     clearBeforeRender: true,
     preserveDrawingBuffer: false, // Desactivado para evitar parpadeos de buffer en Chrome/Edge
     batchSize: 2000,
-<<<<<<< HEAD
     willReadFrequently: true, // Optimiza getImageData cuando el motor usa Canvas2D
   },
   scene: [
@@ -33,11 +32,6 @@ const config = {
     RobotsPuzzle2Scene,
     RobotsPuzzle3Scene,
   ],
-=======
-    willReadFrequently: false // Desactivado si usamos WebGL (Phaser.AUTO)
-  },
-  scene: [Nivel2Scene, ContextoScene, MinijuegoScene],
->>>>>>> d6a628972065d8af0798ec07d0b64d3333036ea0
 };
 
 // Crear el contenedor del juego

@@ -57,6 +57,8 @@ class RobotsPuzzle3Scene extends Phaser.Scene {
     this.input.on("dragend", (pointer, gameObject) => {
       gameObject.setData("isDragging", false);
     });
+
+    // Texto de puntuación eliminado a petición
   }
 
   createFallbackTextures() {
@@ -1052,6 +1054,9 @@ class RobotsPuzzle3Scene extends Phaser.Scene {
     this.createSuccessParticles(dropZone.x, dropZone.y, color);
 
     this.score++;
+    // this.updateScoreText(); // Eliminado
+
+    // Destruir objeto original
     gameObject.destroy();
 
     this.tweens.add({
